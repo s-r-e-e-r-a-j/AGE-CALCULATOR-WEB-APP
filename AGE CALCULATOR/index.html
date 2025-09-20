@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Age Calculator</title>
- <link rel="stylesheet" href="style.css">
- <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-<div class="container">
-  <div class="date-container">
-    <form id="search-form">
-<input type="date" id="date">
-<button class="btn">Calculate</button>
-</form>
+  <div class="container">
+    <h1 class="title">Age Calculator</h1>
+
+    <form id="search-form" class="date-form">
+      <input type="date" id="date" required>
+      <button class="btn">Calculate</button>
+    </form>
+
+    <div class="results">
+      <div class="result-box">
+        <h1 id="displayyear">-</h1>
+        <span>Years</span>
+      </div>
+      <div class="result-box">
+        <h1 id="displaymonths">-</h1>
+        <span>Months</span>
+      </div>
+      <div class="result-box">
+        <h1 id="displaydays">-</h1>
+        <span>Days</span>
+      </div>
+    </div>
   </div>
-
-
-<div class="year-shower"><h1 id="displayyear">-</h1><span>Years</span></div>
-<div class="month-shower"><h1 id="displaymonths">-</h1><span>Months</span></div>
-<div class="days-shower"><h1 id="displaydays">-</h1><span>Days</span></div>
-</div>
-  </body>
-  </html>
+</body>
+</html>
