@@ -1,108 +1,107 @@
-  
-*{
-
-    box-sizing:border-box;
-    font-family:sans-serif;
-  }
-  
-  .container{
-    background-color:cyan;
-    width:100%;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  
-  .date-container{
-     position:relative;
-     bottom:60px;
-     left:100px;
-     background-color:white;
-     width:30%;
-     height:10%;
-     border-radius:10px;
-     position:relative;
-     box-shadow:0 0.93em 1.25em rgba(0,0,0,0.3);
-  }
-  
-  input{
-     width:250px;
-     height:50px;
-     cursor:pointer;
-     position:absolute;
-     top:12px;
-     left:30px;
-     outline:none;
-     border:none;
-     border-radius:4px;
-     background-color:lightskyblue;
-     padding:10px 20px;
-     cursor:pointer;
-  
-  }
-  
-  .btn{
-  
-     position:absolute;
-     background-color:cyan;
-     font-size:1rem;
-     left:300px;
-     top:12px;
-     height:50px;
-     border-radius:4px;
-     padding:0 20px;
-     cursor:pointer;
-  
-  
-  }
-
-.btn:active{
-
-  background-color:violet;
-  transition:0.2s;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-  
-  .year-shower{
-    position:relative;
-    background-color:white;
-    top:90px;
-    right:330px;
-    border-radius:4px;
-    box-shadow:0 0.93em 1.25em rgba(0,0,0,0.3);
-    padding:0 10px;
-    width:100px;
-    height:100px;
-    text-align:center;
+
+body {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 5vw;
+  border-radius: 12px;
+  box-shadow: 0 1em 1.5em rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.date-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+input[type="date"] {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: #0072ff;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:active {
+  background: #0059cc;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.result-box {
+  background: #f7f7f7;
+  flex: 1 1 30%;
+  min-width: 100px;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-box h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #0072ff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
   }
-  
-  .month-shower{
-  
-   position:relative;
-    background-color:white;
-    top:90px;
-    right:270px;
-    width:100px;
-    height:100px;
-    padding:0 10px;
-    border-radius:4px;
-    box-shadow:0 0.93em 1.25em rgba(0,0,0,0.3);
-    text-align:center;
+
+  input[type="date"], .btn {
+    font-size: 1rem;
+    padding: 10px;
   }
-  
-  .days-shower{
-  
-   position:relative;
-   background-color:white;
-   top:90px;
-   right:210px;
-   width:100px;
-   height:100px;
-   padding:0 10px;
-   border-radius:4px;
-   box-shadow:0 0.93em 1.25em rgba(0,0,0,0.3);
-   text-align:center;
-  
+
+  .result-box h1 {
+    font-size: 2rem;
   }
-  
+}
