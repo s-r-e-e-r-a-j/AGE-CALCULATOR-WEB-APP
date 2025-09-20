@@ -1,1 +1,4 @@
-Age Calculator Made With Html Css And JavaScript![Screenshot 2024-08-12 173925](https://github.com/user-attachments/assets/01efe943-c811-4efc-acbd-4abdcb094cce)
+Age Calculator Made With Html Css And JavaScript
+
+
+<img width="990" height="726" alt="Screenshot 2025-09-20 175300" src="https://github.com/user-attachments/assets/986a3aa5-0725-4880-8b8b-918626e23ec3">
